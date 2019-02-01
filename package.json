@@ -1,0 +1,10 @@
+{
+  "name": "nativescript-serialport-plugin",
+  "version": "1.0.0",
+  "description": "",
+  "dependencies": {
+    "eslint": "^5.12.1",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.16.0"
+  }
+}

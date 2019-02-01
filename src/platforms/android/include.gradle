@@ -1,0 +1,12 @@
+android {
+}
+
+allprojects {
+  repositories {
+    maven { url "https://jitpack.io" }
+  }
+}
+
+dependencies {
+  implementation 'com.github.felHR85:UsbSerial:6.0.1'
+}
