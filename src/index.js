@@ -71,9 +71,9 @@ const create = () => {
   return nsSerialport;
 };
 
-const setCurrentDevice = (vendorId, productId) => {
-  nsSerialport.setCurrentDevice(vendorId, productId);
-};
+const setCurrentDevice = (vendId, prodId) => nsSerialport.setCurrentDevice(vendId, prodId);
+
+const setAutoConnect = autoConncect => nsSerialport.setAutoConnect(autoConncect);
 
 const connect = () => {
   nsSerialport.connect();
@@ -94,10 +94,12 @@ const writeString = (text) => {
 module.exports = {
   create,
   setCurrentDevice,
+  setAutoConnect,
   connect,
   getInstance,
   destroy,
   writeString,
   on,
-  getDeviceList
+  getDeviceList,
+  ...intentFilterList
 };
