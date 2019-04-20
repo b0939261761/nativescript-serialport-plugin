@@ -12,5 +12,7 @@ module.exports = {
     // disallow the unary operators ++ and -- (no-plusplus)
     'no-plusplus': 'off',
 
+    // disallow dangling underscores in identifiers (no-underscore-dangle)
+    'no-underscore-dangle': 'off'
   }
 };

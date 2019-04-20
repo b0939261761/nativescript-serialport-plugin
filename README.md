@@ -6,3 +6,15 @@
 [Инструкция содания плагина](https://www.nativescript.org/blog/plugins-and-jars)
 
 Шаблон [React Native](https://github.com/melihyarikkaya/react-native-serialport)
+
+```js
+const onCallback = (context, intent) => {
+  if (TNS_ENV !== 'production') console.info(intent.getAction());
+};
+
+serialport.on(serialport.DEVICE_ATTACHED, onCallback);
+serialport.on(serialport.DEVICE_DETACHED, onCallback);
+serialport.on(serialport.DEVICE_PERMISSION_GRANTED, onCallback);
+serialport.on(serialport.DEVICE_PERMISSION, onCallback);
+serialport.on(serialport.DEVICE_CONNECT, onCallback);
+```
