@@ -69,10 +69,10 @@ module.exports = class {
     return deviceList;
   }
 
-  connect({ vendorId, productId, autoConncect = false }) {
+  connect({ vendorId, productId, autoConnect = false }) {
     this._nsSerialport.setVendorId(vendorId);
     this._nsSerialport.setProductId(productId);
-    this._nsSerialport.setAutoConnect(autoConncect);
+    this._nsSerialport.setAutoConnect(autoConnect);
     this._nsSerialport.connect();
   }
 
